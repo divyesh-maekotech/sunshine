@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script type="module" src="js/web.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <script>
+    $(function () {
+      $("#header").load("Header.html");
+      $("#footer").load("Footer.html");
+    });
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="import" href="Header.html">
+  <link rel="import" href="Footer.html">
+  <title>Sun Shine Marble</title>
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <div class="container mt-24">
+    <div class="items-center mx-3 lg:mx-7 xl:mx-7  ">
+      <div class="flex flex-col gap-2 head_approach pl-3 lg:pl-6">
+        <h4>Contact Us</h4>
+        <h2 class="text-xl lg:text-3xl">Get In Touch</h2>
+      </div>
+    </div>
+
+
+    <div class="flex flex-col lg:flex-row xl:flex-row m-3 lg:m-7 xl:m-7 ">
+      <div class="flex flex-col w-full lg:w-6/12 xl:lg:w-6/12  px-3 lg:px-6 lg:pl-6">
+        <p class="para text-xs lg:text-base leading-6 lg:leading-8  mb-4">Drop us a note to setup a meeting with our Innovation Team</p>
+        <form class="contact_form" action="" id="contactForm" method="POST">
+          <div class="flex flex-col lg:flex-row xl:flex-row items-center  gap-0 lg:gap-5">
+            <input type="text" placeholder="FirstName" name="fname" class="fname" value="" required>
+            <input type="text" placeholder="LastName" name="lname" class="lname" value="" required>
+          </div>
+
+          <div class="flex flex-col lg:flex-row xl:flex-row items-center  gap-0 lg:gap-5">
+            <input type="email" placeholder="Email" name="email" class="email" value="" required>
+            <input type="text" placeholder="Number" id="msg" name="phone" value="" required>
+          </div>
+
+          <div class="">
+            <select name="esubject">
+
+              <option value="Odoo ERP"> Web Development </option>
+              <option value="Digital Marketing">Open Source ERP</option>
+              <option value="Web Development">Mobile Applications</option>
+              <option value="Mobility">FrontEnd Development</option>
+              <option value="Mobility">UI / UX Design</option>
+              <option value="Animation">E-commerce Solutions</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="">
+            <textarea type="text" name="msg" placeholder="Message" class="msg" value=""></textarea>
+          </div>
+
+
+          <button class="btn3 float-end" type="submit" value="Send Email" onclick="sendEmail()">Submit</button>
+
+        </form>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+
+          //function to send msg
+          const form = document.querySelector('.contact_form');
+          function sendMsg(e) {
+            e.preventDefault();
+
+            const name = document.querySelector('.fname');
+            email = document.querySelector('.email');
+            msg = document.querySelector('.msg');
+          }
+
+          //add event lisner submit
+
+          // function sendEmail() {
+          //   Email.send({
+          //     Host: "smtp.elasticemail.com",
+          //     Username: "rg.maekotech@gmil.com",
+          //     Password: "00756B56A6EDFF8143BE3906F587316ADBD8",
+          //     SecureToken: "12d5afae-91a2-4a71-a224-91995778e8ee",
+          //     To: 'rg.maekotech@gmil.com',
+          //     From: "email.value",
+          //     Subject: "Test Email",
+          //     Body: "msg.value"
+          //   }).then(
+          //     message => alert("mail sent successfully")
+          //   );
+            
+          // }
+          function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "rg.maekotech@gmail.com",
+                Password: "00756B56A6EDFF8143BE3906F587316ADBD8",
+                SecureToken: "12d5afae-91a2-4a71-a224-91995778e8ee",
+                // replyto: '',
+                To: 'rg.maekotech@gmail.com',
+                From: 'raginilohar80068@gmail.com',
+                Subject: "Testing Email using JavaScript",
+                Body: "If you are reading this, don't forget to applaud",
+            })
+            .then(function (message) {
+                alert("Email successfully sent");
+            });
+        }
+          form.addEventListener('submit', sendMsg);
+        </script>
+        
+      </div>
+
+
+      <div class="flex flex-col w-full lg:w-6/12 xl:lg:w-6/12 items-center justify-center">
+        <div class="flex flex-col gap-2 lg:gap-5 px-4 lg:px-8 mt-8">
+          <div class="address_wrap  flex flex-row gap-4">
+            <img src="https://sunshinemarble.wordpress.com/wp-content/uploads/2016/05/new-logo123.png?w=488" class="h-10" alt="Maeko Logo" />
+            <div class="flex flex-col">
+              <h4 class="head_approach ">Sun Shine Marble</h4>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8">N.H. 8, Opp. Bhudhar road, Rishabhdeo
+                Udaipur – 313802 (India)
+                Telephone: <a href="+91 946 072 8501">+91 946 072 8501</a><br>
+              </p>
+            </div> 
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!--Remaining section-->
+    <div id="footer"></div>
+
+</body>
+
+</html>

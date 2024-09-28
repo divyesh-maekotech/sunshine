@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script type="module" src="js/web.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- <script type='module' src='expenses-chart-component-main.js'></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <script>
+    $(function () {
+      $("#header").load("Header.html");
+      $("#footer").load("Footer.html");
+    });
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="import" href="Header.html">
+  <link rel="import" href="Footer.html">
+  <title>Sun Shine Marble</title>
+</head>
+
+
+<body>
+  <div class="container ">
+    <div id="header"></div>
+
+    <section>
+      <div class="">
+        <img src="img/welcome.png" class="w-full mt-16" />
+        <div class="bottom-14 lg:bottom-28 xl:bottom-28 pl-5 lg:pl-10 relative ">
+          <h1 class="main_head text-xl lg:text-4xl  xl:text-4xl text-white ">Welcome to Sun Shine Marble..</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid about-para px-5 lg:px-12 bg-[#ffffff]">
+      <div class="container">
+        <div class="">
+          <div class="">
+
+            <div class="bar_top">
+              <span class=""></span>
+              <h4 class="head_approach mb-2">Our Company</h4>
+              <h2 class="main_head text-2xl lg:text-4xl  xl:text-4xl mb-2">Offering a comprehensive <span
+                  class="text-[#27166D]"> range of digital solutions</span></h2>
+            </div>
+
+            <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-4">Enjoy the business world with us. We atSun Shine Marble maintain our position
+              as a leading IT company delivering creative solutions and results. Hearty applause to the entire team for
+              the dedication and attention to detail. Our design-centric approach and technical expertise have made our
+              fame the most trustworthy among clients.</p>
+
+            <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-4">We are known among customers for our quality services at the most competitive rates. We
+              are a group of industry professionals who always go the extra mile to assure our clients' satisfaction in
+              everything we deliver. Rather than delivering cookie-cutter solutions, we the pioneers of IT company
+              around the globe, analyze our client's needs and create a tailored solution to reach your business goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid relative red-about P-5 lg:p-10 bg-[#ffffff]">
+      <div class="container">
+        <div class="">
+          <div class="text-center z-0">
+            <h1 class="main_head text-2xl lg:text-4xl  xl:text-4xl mb-10 text-[#173751 ]">We work
+              according to our core
+              values:<br><span class="text-[#27166D]">honesty, hard work and trust.</span></h1>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 md:grid-cols-1 gap-10 justify-items-center">
+            <div class="flex-flex-col lg:flex  ">
+              <img src="img/about_icon1.svg" alt="..." class="w-16 pb-0 lg:pb-24" style="margin: 0 auto 20px;">
+              <div class="text-center lg:text-left xl:text-left px-5">
+                <h2 class="head_approach text-[#173751 ]">Vision</h2>
+                <p class="para text-xs lg:text-base leading-6 lg:leading-8"> To provide state of the art solutions to our customers with complete value in terms of
+                  service and quality.</p>
+              </div>
+            </div>
+
+            <div class="flex-flex-col lg:flex  ">
+              <img src="img/about_icon1.svg" alt="..." class="w-16 pb-0 lg:pb-24" style="margin: 0 auto 20px;">
+              <div class="  text-center lg:text-left xl:text-left px-5">
+                <h2 class="head_approach text-[#173751] ">Mission</h2>
+                <p class="para text-xs lg:text-base leading-6 lg:leading-8"> To become a true technological brain of the associated customers. Provide state-of-the
+                  art
+                  technological solutions to solve their problems.</p>
+              </div>
+            </div>
+
+            <div class="flex-flex-col lg:flex ">
+              <img src="img/about_icon1.svg" alt="..." class="w-16 pb-0 lg:pb-24" style="margin: 0 auto 20px;">
+              <div class="  text-center lg:text-left xl:text-left px-5">
+                <h2 class="head_approach text-[#173751] ">SucceedTogether</h2>
+                <p class="para text-xs lg:text-base leading-6 lg:leading-8"> To provide state of the art solutions to our customers with complete value in terms of
+                  service and quality.</p>
+              </div>
+            </div>
+            
+            <div class="flex-flex-col lg:flex ">
+              <img src="img/about_icon1.svg" alt="..." class="w-16 pb-0 lg:pb-24" style="margin: 0 auto 20px;">
+              <div class="  text-center lg:text-left xl:text-left px-5">
+                <h2 class="head_approach  text-[#173751] ">ExceedExpectation</h2>
+                <p class="para text-xs lg:text-base leading-6 lg:leading-8">Every person thinks differently. Understand & Set expectation to Meet & Exceed
+                  Expectation</p>
+              </div>
+            </div>
+
+            <div class="flex-flex-col lg:flex ">
+              <img src="img/about_icon2.svg" alt="..." class="w-16 pb-0 lg:pb-24" style="margin: 0 auto 20px;">
+              <div class="  text-center lg:text-left xl:text-left px-5">
+                <h2 class="head_approach text-[#173751]">TrustedPartner</h2>
+                <p class="para text-xs lg:text-base leading-6 lg:leading-8">Transparency and honesty with client. Transparency in sharing of facts helps in
+                  building
+                  trust in your work & process behind it.</p>
+              </div>
+            </div>
+
+            <div class="flex-flex-col lg:flex ">
+              <img src="img/about_icon3.svg" alt="..." class="w-16 pb-0 lg:pb-24 mr-auto " style="margin: 0 auto 20px;">
+              <div class="  text-center lg:text-left xl:text-left px-5">
+                <h2 class="head_approach text-[#173751]">DeliverRight</h2>
+                <p class="para text-xs lg:text-base leading-6 lg:leading-8"> Don’t say “Yes”, when answer is “No”. Say “No” if it can’t be achieved, and provide
+                  rationale & next best solution.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Remaining section-->
+    <div id="footer"></div>
+
+  </div>
+</body>
+
+</html>

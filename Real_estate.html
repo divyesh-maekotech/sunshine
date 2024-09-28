@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script type="module" src="js/web.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- <script type='module' src='expenses-chart-component-main.js'></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <script>
+    $(function () {
+      $("#header").load("Header.html");
+      $("#footer").load("Footer.html");
+    });
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="import" href="Header.html">
+  <link rel="import" href="Footer.html">
+  <title>Sun Shine Marble</title>
+</head>
+
+
+<body>
+  <div class="container ">
+    <div id="header"></div>
+
+    <section>
+      <div class="h-72 lg:h-96">
+        <img src="img/real_estate.jpeg" class="w-full h-60 lg:h-96 mt-16 object-cover"/>
+        <div class=" bottom-16 lg:bottom-28 pl-5 lg:pl-10 relative overflow-x-hidden">
+          <h1 class="main_head text-2xl lg:text-4xl  xl:text-4xl text-white ">Real-Estate</h1>
+          <h3 class="text-base leading-8 text-white font-normal">Unbeatable Services</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid about-para text-xs lg:text-base leading-6 lg:leading-8 px-0 lg:px-6 lg:p-18 bg-[#fff]">
+      <div class="container">
+        <div class="">
+          <div class="flex flex-col lg:flex-row xl:flex-row items-center ">
+            <div class="w-full lg:w-2/4 p-5">
+              <h1 class="main_head text-2xl lg:text-3xl  xl:text-3xl mb-5 leading-10">Feel Better!! Maeko Tech
+                Simplifying Real Estate Management</h1>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8 content-center ">We provide solutions for streamlining real estate projects with
+                ease. Let’s
+                discuss your project, plan, budget and execute.
+              </p>
+            </div>
+            <div class="flex flex-col w-full lg:w-6/12 xl:w-6/12  justify-center">
+              <img src="img/realestate.png" class="h-96">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid red-about p-0 lg:p-12  pr-1 lg:pr-40 xl:pr-40 bg-[#f4f6f7] relative">
+      <div class="container">
+        <div class="flex flex-col lg:flex-row gap-12">
+          <div class="col-12 col-md-6 w-full lg:w-3/5 ">
+            <h1 class="main_head text-xl lg:text-4xl  xl:text-4xl my-2 px-5 lg:px-0 text-[#173751]">Live Your
+              Dream… We Offer
+            </h1>
+            <!-- <img src="img/about_icon1.svg" alt="..." class="pl-0 lg:pl-28" style="margin: 0 auto 20px;"> -->
+            <div class="grid grid-row px-5 lg:px-0  lg:text-left xl:text-left  gap-0 lg:gap-5">
+              <h2 class="head_approach  text-base lg:text-xl text-[#173751]">Sales Management</h2>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8  mb-2 "> Our solution handles all client transactions and ensure better efficiency.
+              Maeko Tech is always available at your service. We simplify your hectic invoices, receipts with GST/HST
+                regulations, track sales operations, sales strategy and sales analysis.</p>
+            </div>
+
+            <div class="grid grid-row px-3.5 lg:px-0 lg:text-left xl:text-left gap-0 lg:gap-5">
+              <h2 class="head_approach text-base lg:text-xl text-[#173751]">Procurement Management</h2>
+              <p class="para  text-xs lg:text-base leading-6 lg:leading-8 mb-2"> Track the cost of procurement of goods, purchase orders, vendor management to
+                increase productivity in business.
+              </p>
+            </div>
+
+            <div class="grid grid-row px-5 lg:px-0 lg:text-left xl:text-left gap-0 lg:gap-5">
+              <h2 class="head_approach  text-base lg:text-xl text-[#173751]" >Inventory Management</h2>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-2">Manage your logistics, operations, finance, and inventory to help your
+                business make better decisions.
+
+              </p>
+            </div>
+
+            <div class="grid grid-row px-5 lg:px-0 lg:text-left xl:text-left gap-0 lg:gap-5">
+              <h2 class="head_approach  text-base lg:text-xl text-[#173751]" >End-to-End Accounting</h2>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-2">Real estate management demands end-to-end accounting requirements including
+                vouchers, ledgers, cash flow, and balance sheets.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 w-full lg:w-2/6 p-5 lg:p-10 bg-[#f0ffff]">
+            <ul>
+              <h4 class="head_approach  text-base lg:text-xl text-[#173751]" >Why ERP in Real Estate?</h4>
+              <li class="text-xs lg:text-base font-medium leading-7 mt-5">Construction and Development</li>
+              <li class="text-xs lg:text-base font-medium leading-7 mt-5">Tools & analytics for custom reporting</li>
+              <li class="text-xs lg:text-base font-medium leading-7 mt-5">Marketing automation</li>
+              <li class="text-xs lg:text-base font-medium leading-7 mt-5">Payment solution</li>
+              <li class="text-xs lg:text-base font-medium leading-7 mt-5">Rental and leasing management</li>
+            </ul>
+            <ul>
+              <h4 class="head_approach mt-5 text-base lg:text-xl text-[#173751]" >We help you out</h4>
+              <li class="text-xs lg:text-base font-medium leading-7  mt-5"><b>Automate workflows</b> <br />A flexible solution to
+                simplify property management, rental management, facility management and more.</li>
+              <li class="text-xs lg:text-base font-medium leading-7  mt-5"><b>Enhanced Property Management Solution</b>
+                <br />Property management solution under one roof to facilitate proper communication.</li>
+              <li class="text-xs lg:text-base font-medium leading-7  mt-5"><b>Marketing Automation Features</b> <br />Let us help
+                you stand among competitors with our marketing automation solution to review properties.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--Remaining section-->
+    <div id="footer"></div>
+
+  </div>
+</body>
+
+</html>

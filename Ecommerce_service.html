@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script type="module" src="js/web.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- <script type='module' src='expenses-chart-component-main.js'></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <script>
+    $(function () {
+      $("#header").load("Header.html");
+      $("#footer").load("Footer.html");
+    });
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="import" href="Header.html">
+  <link rel="import" href="Footer.html">
+  <title>Sun Shine Marble</title>
+</head>
+
+
+<body>
+  <div class="container ">
+    <div id="header"></div>
+
+    <section>
+      <div class="h-60 lg:h-96 ">
+        <img src="img/Ecommerce.jpeg" class="w-full h-60 lg:h-96 mt-16 object-cover"/>
+        <div class="  bottom-14 lg:bottom-28 xl:bottom-28 pl-5 lg:pl-10 relative overflow-x-hidden">
+          <h1 class="main_head text-xl lg:text-4xl  xl:text-4xl text-white ">E-Commerce</h1>
+          <h6 class="text-base leading-8 text-white font-normal">Your Choice Matters</h6>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid about-para text-xs lg:text-base leading-6 lg:leading-8 p-6 lg:p-18 bg-[#fff]">
+      <div class="container">
+        <div class="">
+          <div class="flex flex-col lg:flex-row xl:flex-row px-0 lg:px-5">
+
+            <div class="w-full lg:w-6/12 content-center">
+
+              <div class="bar_top">
+                <h4 class="main_head text-xl lg:text-4xl  xl:text-4xl mb-4">Award-Winning Ecommerce Store Development
+                  Services
+                </h4>
+              </div>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8">We have expertise to setup E-Commerce solution
+                for enterprises, retailers, B2B and B2C. We
+                are dealing with latest e-commerce platfroms and technologies to launch eStore very easily and securely.
+              </p>
+            </div>
+            <div class="flex flex-col w-full lg:w-6/12 xl:w-6/12  justify-center">
+              <img src="img/e-com.png" class="h-96">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid about-para text-xs lg:text-base leading-6 lg:leading-8 px-6 pb-4 lg:p-18 bg-[#fff]">
+      <div class="container">
+        <div class="">
+
+          <div class="flex flex-col lg:flex-row xl:flex-row ">
+            <div class="flex flex-col w-full lg:w-6/12 xl:w-6/12">
+              <img src="img/e-commerce.jpeg">
+            </div>
+            <div class="w-full lg:w-6/12 xl:w-6/12 px-0 lg:px-10">
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-2"><i
+                  class="fa fa-check-circle m-2 text-xl lg:text-2xl"></i>An outstanding logo that encapsulates the
+                brand's identity</p>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-2"><i
+                  class="fa fa-check-circle m-2 text-xl lg:text-2xl"></i>SA shop that is sparsely furnished but easy to
+                navigate</p>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-2"><i
+                  class="fa fa-check-circle m-2 text-xl lg:text-2xl"></i>You may create an unlimited number of product
+                categories in your product catalog.</p>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-2"><i
+                  class="fa fa-check-circle m-2 text-xl lg:text-2xl"></i>Shopping cart administration</p>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-2"><i
+                  class="fa fa-check-circle m-2 text-xl lg:text-2xl"></i>Simple Integration of Payment Options</p>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-2"><i
+                  class="fa fa-check-circle m-2 text-xl lg:text-2xl"></i>The ability to create discounts</p>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-2"><i
+                  class="fa fa-check-circle m-2 text-xl lg:text-2xl"></i>Tax-conscious bill management</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Remaining section-->
+    <div id="footer"></div>
+
+  </div>
+</body>
+
+</html>

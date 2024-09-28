@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <script type="module" src="js/web.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <script>
+    $(function () {
+      $("#header").load("Header.html");
+      $("#footer").load("Footer.html");
+    });
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="import" href="Header.html">
+  <link rel="import" href="Footer.html">
+  <title>Sun Shine Marble</title>
+</head>
+
+<body>
+  <div class="container ">
+    <div id="header"></div>
+
+    <main>
+      <section class="h-96">
+        <div class="swiffy-slider ">
+          <ul class="slider-container h-96" >
+            <li class="flex flex-row  w-full bg-[#42d38e] h-2/4 bottom-14 "><img src="img/smart_scl_bnr_1.png"
+                class="relative left-28">
+              <div
+                class="hidden lg:block md:block main_head text-xl lg:text-4xl  xl:text-4xl text-white relative md:left-52 lg:left-96  w-56 leading-10 content-center">
+                Your School Is In Your Finger Tips Anytime Anywhere.</div>
+            </li>
+            <li class="flex flex-row  w-full bg-[#f9c133] h-2/4 bottom-14"><img src="img/mob-mockup.png"
+                class="relative left-28">
+              <div
+                class="hidden lg:block  md:block  main_head text-xl lg:text-4xl  xl:text-4xl text-white relative md:left-52 lg:left-96 w-56 leading-10 content-center">
+                Hassle-Free Fee Payment
+                <div class="text-base leading-8 text-white font-normal">Knows how much you have to pay & when you have
+                  to pay</div>
+              </div>
+
+            </li>
+          </ul>
+
+          <button type="button" class="slider-nav h-2/4 mt-14"></button>
+          <button type="button" class="slider-nav slider-nav-next h-2/4 mt-14"></button>
+
+          <!-- <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+          </div> -->
+        </div>
+      </section>
+      <section>
+        <div class="pt-0 px-5 lg:px-10 pb-10 text-center">
+          <h1 class="main_head text-2xl lg:text-4xl  xl:text-4xl mb-2">Digitize your School with SAKAL APP
+          </h1>
+          <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-4">A comprehensive school ERP, specially designed to manage all the administrative tasks of
+            a school effectively. A cloud based solution with both web and mobile application to track over all
+            information of student.
+          </p>
+          <div class="flex flex-row justify-center gap-5 mb-2 ">
+            <a href="apply.html" class="btn4 text-center py-2 read_more_btn">Join Our Team</a>
+            <a href="Contact_us.html" class="btn3 text-center py-2 ">Let's talk</a>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#eff8ed] p-5 lg:p-10">
+        <div class="flex flex-col lg:flex-row xl:flex-row gap-10">
+          <div class="flex flex-col w-full lg:w-6/12 xl:w-6/12 ">
+           <h1 class="main_head text-base lg:text-4xl  xl:text-4xl mb-4 ">Smart School At Your
+            <br/>Finger-Tips</h1>
+            <h4 class="head_approach mb-7 text-base lg:text-xl leading-7">Best fit for schools, colleges and other institutes</h4>
+            <ul &#9989;>
+              <li class="mb-7 text-xs lg:text-base  leading-7"><b>For teachers : </b>Helps monitor student progress and spend their core time on teaching.
+              </li>
+              <li class="mb-7 text-xs lg:text-base  leading-7"><b>For parents : </b>Updates and informs parents about student academic progress & leverage transparent communication between parents and teachers.
+              </li>
+              <li class="mb-7 text-xs lg:text-base  leading-7"><b>For admin : </b>Ensures productivity and time saving for effective management of educational institutions.
+              </li>
+            </ul>
+            <div class="flex flex-row gap-5 mb-2 justify-center lg:justify-start">
+              <a href="Contact_us.html" class="btn7 text-center py-2 ">Schedule A Demo</a>
+              <a href="https://school.kansaratech.com/" class="btn6 text-center py-2 ">Learn More</a>
+            </div>
+          </div>
+          <div class="flex flex-col w-full lg:w-6/12 xl:w-6/12">
+            <img src="img/mobile_app.png">
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Remaining section-->
+    <div id="footer"></div>
+
+  </div>
+</body>
+
+</html>

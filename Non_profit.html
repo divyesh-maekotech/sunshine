@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script type="module" src="js/web.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- <script type='module' src='expenses-chart-component-main.js'></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <script>
+    $(function () {
+      $("#header").load("Header.html");
+      $("#footer").load("Footer.html");
+    });
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="import" href="Header.html">
+  <link rel="import" href="Footer.html">
+  <title>Sun Shine Marble</title>
+</head>
+
+
+<body>
+  <div class="container ">
+    <div id="header"></div>
+
+    <section>
+      <div class="">
+        <img src="img/non_profit.jpeg" class="w-full h-60 lg:h-80 mt-16 object-cover opacity-80" />
+        <div class=" bottom-20  pl-5 lg:pl-10 relative overflow-x-hidden">
+          <h1 class="main_head text-2xl lg:text-4xl  xl:text-4xl text-white ">Non-Profit</h1>
+          <h3 class="text-base leading-8 text-white font-normal">Grow Better</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid about-para text-xs lg:text-base leading-6 lg:leading-8 px-5 lg:px-10 bg-[#fff]">
+      <div class="container">
+        <div class="">
+          <div class="">
+
+            <div class="bar_top">
+              <h4 class="main_head text-2xl lg:text-4xl  xl:text-4xl mb-2">Let Us Serve Non-Profit Organisations With A
+                Scalable ERP Software…</h4>
+            </div>
+            <p class="para text-xs lg:text-base leading-6 lg:leading-8 mb-10">Non-profit organization requires an easy, and
+              affordable solution to cater the changing needs in their business industry. Financial management,
+              workforce management, process management need to be streamlined to improve business productivity.
+            </p>
+          </div>
+          <div class="flex flex-col lg:flex-row xl:flex-row gap-2 lg:gap-12 md:gap-5">
+            <div class="flex flex-col w-full lg:w-6/12 xl:w-6/12 ">
+              <h4 class="main_head text-2xl lg:text-4xl  xl:text-4xl mb-2">Why ERP?</h4>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8 content-center">When resources become scarce,
+                allocation of funds becomes a matter of concern. Finding source of revenue, operating expenses, employee
+                salaries and project funds is however a painful area for non-profit organizations. All you desire is a
+                comprehensive financial management system to record complete financial data and generate accurate
+                reports as well.
+              </p>
+            </div>
+            <div class="w-full lg:w-6/12 xl:w-6/12  content-center">
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8 content-center"><i class="fa fa-check-circle m-2 text-xl"></i>ERP for non-profit
+                organisations handles all such reports accurately and timely.</p>
+              <p class="para text-xs lg:text-base leading-6 lg:leading-8"><i class="fa fa-check-circle m-2 text-xl"></i>Time saving will shoot up, increasing
+                productivity in future.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Remaining section-->
+    <div id="footer"></div>
+
+  </div>
+</body>
+
+</html>
