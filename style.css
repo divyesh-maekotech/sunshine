@@ -121,7 +121,7 @@ body {
   left: 55px;
   top: 225px;
   z-index: 1;
-  background: #27166D;
+  background-image:url("img/backgroundblack.webp");
   color: #FFFFFF;
   padding: 50px;
   overflow: hidden;
@@ -135,8 +135,8 @@ body {
 
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
+  font-weight: 500;
+  font-size: 30px;
   /* font-size: 3.125vw; */
   line-height: 56px;
 
@@ -149,7 +149,7 @@ body {
   top: 110px;
   left: 25%;
   z-index: 1;
-  background: #27166D;
+  background-image: url("img/backgroundblack.webp");
   color: #FFFFFF;
   padding: 20px;
   overflow: hidden;
@@ -172,11 +172,10 @@ body {
 
 .sec2_head {
   /* position: absolute; */
-  width: 473px;
   height: 35px;
   left: 472px;
   top: 60px;
-
+text-align: center;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -369,7 +368,7 @@ body {
 }
 
 .btn1 {
-  width: 80px;
+
   height: 40px;
   left: 966px;
   top: 201px;
