@@ -125,7 +125,7 @@ body {
   color: #FFFFFF;
   padding: 50px;
   overflow: hidden;
-  border-radius: 0px 50px 0px 0px;
+  border-radius: 0px 50px 50px 0px;
 }
 
 .msg_text {
@@ -306,7 +306,7 @@ text-align: center;
   background: #ffffff;
   border-radius: 127px 0px 0px 0px;
   /* padding: 80px; */
-  width: 665px;
+  width: 800px;
 }
 
 .title {
